@@ -4,7 +4,7 @@
 
 Floor-call switches and position sensors feed minimized Boolean logic. D flip-flops store the motor command, and a transistor H-bridge drives a DC motor up or down. It was designed with truth tables and K-maps, simulated, tested, and built as a physical model.
 
-![Physical elevator model](images/physical-model.jpg)
+![Physical elevator model](physical-model.jpg)
 
 ---
 
@@ -33,7 +33,7 @@ This project solves that with pure digital logic, following the full design meth
 
 ## 🧩 Inputs, Outputs & States
 
-![Inputs, outputs and state diagram](images/inputs-outputs-state-diagram.png)
+![Inputs, outputs and state diagram](inputs-outputs-state-diagram.png)
 
 | Signal | Type | Meaning |
 |---|---|---|
@@ -58,11 +58,11 @@ This project solves that with pure digital logic, following the full design meth
 
 All 16 input combinations were analyzed:
 
-![Truth table](images/truth-table.png)
+![Truth table](truth-table.png)
 
 ### K-Map Minimization
 
-![K-maps](images/kmaps.png)
+![K-maps](kmaps.png)
 
 The K-maps reduce the logic to just **two 3-input AND terms**:
 
@@ -79,7 +79,7 @@ D2 = S1' · S2 · PB2'     → go UP:   Floor 2 is called, Floor 1 is not, and t
 
 ## ⚡ Circuit
 
-![Circuit diagram](images/circuit-diagram.png)
+![Circuit diagram](circuit-diagram.png)
 
 | Stage | Components | Function |
 |---|---|---|
@@ -92,7 +92,7 @@ D2 = S1' · S2 · PB2'     → go UP:   Floor 2 is called, Floor 1 is not, and t
 
 ### Breadboard Layout
 
-![Breadboard layout](images/breadboard-layout.png)
+![Breadboard layout](breadboard-layout.png)
 
 ---
 
@@ -105,7 +105,7 @@ D2 = S1' · S2 · PB2'     → go UP:   Floor 2 is called, Floor 1 is not, and t
 - ✅ Implemented as a **working breadboard prototype** inside a physical elevator model
 
 <!-- 🎥 ADD A VIDEO / GIF OF THE ELEVATOR MOVING HERE
-![Elevator demo](images/elevator-demo.gif)
+![Elevator demo](elevator-demo.gif)
 -->
 
 ---
@@ -132,16 +132,16 @@ D2 = S1' · S2 · PB2'     → go UP:   Floor 2 is called, Floor 1 is not, and t
 
 ## 📁 Repository Contents
 
-```
-two-floor-elevator-digital-logic/
-├── README.md
-├── docs/
-│   ├── Elevator_Final_Report.pdf     ← full technical report
-│   └── Elevator_Presentation.pdf     ← project presentation
-└── images/                           ← circuit, breadboard, truth table, K-maps, model photo
-```
+| File | What it is |
+|---|---|
+| `Elevator_Final_Report.pdf` | Full technical report |
+| `Elevator_Presentation.pdf` | Project presentation |
+| `physical-model.jpg` | Photo of the built elevator model |
+| `circuit-diagram.png` | Multisim circuit diagram |
+| `breadboard-layout.png` | Breadboard wiring layout |
+| `truth-table.png`, `kmaps.png`, `inputs-outputs-state-diagram.png` | Logic design |
 
-📄 **[Read the full report (PDF)](docs/Elevator_Final_Report.pdf)** · 📊 **[View the presentation (PDF)](docs/Elevator_Presentation.pdf)**
+📄 **[Read the full report (PDF)](Elevator_Final_Report.pdf)** · 📊 **[View the presentation (PDF)](Elevator_Presentation.pdf)**
 
 ---
 
