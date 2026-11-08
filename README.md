@@ -6,6 +6,8 @@ Floor-call switches and position sensors feed minimized Boolean logic. D flip-fl
 
 ![Physical elevator model](physical-model.jpg)
 
+**▶️ [Run the live circuit simulation on Tinkercad](https://www.tinkercad.com/things/kPTsNF28y8F)**
+
 ---
 
 ## 📌 At a Glance
@@ -16,7 +18,7 @@ Floor-call switches and position sensors feed minimized Boolean logic. D flip-fl
 | **Date** | Spring 2026 |
 | **Team** | 4 students |
 | **My role** | Circuit simulation, testing, technical report, and poster |
-| **Tools** | Multisim, 7404 (NOT), 7408 (AND), 7474 (D flip-flop), 2N3904/2N3906 H-bridge |
+| **Tools** | Multisim, Tinkercad Circuits, 7404 (NOT), 7408 (AND), 7474 (D flip-flop), 2N3904/2N3906 H-bridge |
 | **Status** | ✅ Simulated · ✅ Tested on breadboard · ✅ Built as a physical model |
 
 ---
@@ -90,9 +92,11 @@ D2 = S1' · S2 · PB2'     → go UP:   Floor 2 is called, Floor 1 is not, and t
 | Indicators | LEDs with 220 Ω resistors | Show motor direction |
 | Power | 5 V logic supply, 9 V motor supply | Separate logic and motor power |
 
-### Breadboard Layout
+### Breadboard Simulation (Tinkercad)
 
 ![Breadboard layout](breadboard-layout.png)
+
+▶️ **[Open and run this circuit in your browser](https://www.tinkercad.com/things/kPTsNF28y8F)**: flip the floor-call switches and press the floor sensors to watch the motor change direction and stop.
 
 ---
 
